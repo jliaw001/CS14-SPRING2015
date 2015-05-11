@@ -1,30 +1,35 @@
 // Name: Jason Liaw
 // SID:  861148463
-// Date: 4/27/2015
+// Date: 5/4/2015
 
 #include <iostream>
-#include <queue>
 
-#include "lab4.h"
+#include "lab5.h"
 
 using namespace std;
 
-int main(int argc, char** argv)
+int main()
 {
-    priority_queue<P, vector<P>, greater<P>> q;
+    BST<int> tree;
+    tree.insert(50);
+    tree.insert(20);
+    tree.insert(60);
+    tree.insert(10);
+    tree.insert(40);
+    tree.insert(20);
+    tree.insert(70);
+    tree.insert(35);
+    tree.insert(45);
     
-    cout << "pre-order" << endl;
-    listCoprimePairs(9, 2, 1);
-    listCoprimePairs(9, 3, 1);
+    cout << "Part 1" << endl;
+    tree.minCover();
+    tree.displayMinCover();
     
-    cout << "post-order" << endl;
-    listCoprimePairs2(9, 2, 1);
-    listCoprimePairs2(9, 3, 1);
+    cout << "Part 2" << endl;
+    tree.findSumPath(80);
     
-    cout << "sorted" << endl;
-    listCoprimePairs3(9, 2, 1, q);
-    listCoprimePairs3(9, 3, 1, q);
-    print_pqueue(q);
+    cout << "Part 3" << endl;
+    tree.vertSum();
+    
     return 0;
 }
-
