@@ -1,0 +1,9 @@
+Name: Jason Liaw
+SID:  861148463
+Date: 5/11/2015
+
+part b.
+The hash table it generally faster than the tree when it comes to inserting and querying
+a list of data. However, its downfall is that everything is unsorted. If the data needed
+some particular order, a tree would be more efficient as it places things in order
+automatically.
