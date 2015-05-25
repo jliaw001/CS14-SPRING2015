@@ -1,0 +1,10 @@
+Name: Jason Liaw
+SID:  861148463
+Date: 5/11/2015
+
+Is your selectionsort function a stable sort?
+a. My selection sort should be stable since I use an iterator to keep track of the smallest value (it2) and
+   another iterator that actually moves through the container to find the smallest value (it3). It3 moves
+   through the container comparing its value with it2 and if the value is less, then it2 gets moved to wherever
+   it3 was and this becomes the new smallest value. However, if the two values were equal, it2 stays where it is
+   and when it's time to swap, it simply swaps with itself, not moving anything and mainting the general order.
